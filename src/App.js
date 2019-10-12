@@ -1,9 +1,12 @@
 import React from 'react';
 
+import Layout from './js/Layout';
+
 function App() {
   return (
     <div className="App">
-      Sanity check
+      <Layout>
+      </Layout>
     </div>
   );
 }
