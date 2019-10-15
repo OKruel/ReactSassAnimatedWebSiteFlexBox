@@ -15,6 +15,11 @@ $color-grey-dark-3: #999;
 
 $color-white: #fff;
 $color-black: black;
+$color-red: red;
 
 //*BOX-SHADOW
 $shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+$shadow-light: 0 2rem 5rem rgba(0,0,0,.3);
+
+//*MARGIN-BOTTOM
+$line: 1px solid $color-grey-light-2;

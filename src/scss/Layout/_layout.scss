@@ -1,36 +1,55 @@
 .container {
-    max-width: 120rem;
-    min-height: 50rem;
-    margin: 8rem auto;
-    background-color: $color-grey-light-2;
-    box-shadow: $shadow-dark;
+  max-width: 120rem;
+  min-height: 50rem;
+  margin: 8rem auto;
+  background-color: $color-grey-light-2;
+  box-shadow: $shadow-dark;
 }
 
 .header {
-    font-size: inherit;
-    height: 7rem;
-    background-color: $color-white;
-    border-bottom: 1px solid $color-grey-light-2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-size: inherit;
+  height: 7rem;
+  background-color: $color-white;
+  border-bottom: $line;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
-    display: flex;
+  display: flex;
 }
 
 .sidebar {
-    background-color: $color-black;
-    flex: 0 0 18%; //! 1Arg(flex-grow) 2Arg(flex-shrink) 3Arg(flex-basis); FLEX-BASIS é WIDTH;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: $color-black;
+  flex: 0 0 18%; //! 1Arg(flex-grow) 2Arg(flex-shrink) 3Arg(flex-basis); FLEX-BASIS é WIDTH;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
+  background-color: $color-white;
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: $color-grey-light-1;
+  border-bottom: $line;
+
+  &__description {
+    font-size: 1.4rem;
     background-color: $color-white;
-    // background-color: orange;
-    height: 80rem;
+    box-shadow: $shadow-light;
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+  }
+
+  &__user-reviews {
+    background-color: green;
     flex: 1;
+  }
 }
