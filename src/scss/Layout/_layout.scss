@@ -7,9 +7,13 @@
 }
 
 .header {
+    font-size: inherit;
     height: 7rem;
     background-color: $color-white;
-    border-bottom: $color-grey-light-2;
+    border-bottom: 1px solid $color-grey-light-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content {
@@ -17,12 +21,16 @@
 }
 
 .sidebar {
-    background-color: $color-grey-dark-1;
+    background-color: $color-black;
     flex: 0 0 18%; //! 1Arg(flex-grow) 2Arg(flex-shrink) 3Arg(flex-basis); FLEX-BASIS é WIDTH;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view {
     background-color: $color-white;
-    background-color: orange;
+    // background-color: orange;
+    height: 80rem;
     flex: 1;
 }
