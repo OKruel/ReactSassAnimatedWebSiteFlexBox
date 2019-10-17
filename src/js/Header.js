@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from '../assets/img/logo.png';
+import User from '../assets/img/ok.png';
+
 import IconMagGlass from '../assets/svg-icons/SVG/magnifying-glass.svg';
 import IconBookmark from '../assets/svg-icons/SVG/bookmark.svg';
 import IconChat from '../assets/svg-icons/SVG/chat.svg';
-import User from '../assets/img/ok.png';
 
 
 const Header = props => (

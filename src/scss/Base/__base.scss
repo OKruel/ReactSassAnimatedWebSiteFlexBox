@@ -1,6 +1,11 @@
 html {
   font-size: 62.5%; //? Defines what 1rem is in global scope; 1rem = 10px; 10px/16px(default browser font-size value) = 62.5%;
   box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+  
 }
 /* Select ALL the elements and their PSEUDO ELEMENTS they have */
 * {
@@ -23,21 +28,15 @@ body {
 }
 
 .App {
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
   box-sizing: inherit;
-  background-image: linear-gradient(to right bottom, $color-grey-light-1 20%, $color-grey-light-4);
+  background-image: linear-gradient(to right, $color-grey-dark-3 5%, $color-grey-light-4);
   background-size: cover;
   padding: 5rem;
 
-  @include respond(tab-land) {
+  @media only screen and (max-width: $bp-large) {
     padding: 0;
-  }
-  @include respond(tab-port) {
-    font-size: 50%;
-  }
-  @include respond(big-desktop) {
-    font-size: 75%;
   }
 }
 

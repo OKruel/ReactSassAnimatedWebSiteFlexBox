@@ -16,7 +16,7 @@ const Navigation = props => (
             </li>
             <li className='side-nav__item'>
                 <a href='#header' className='side-nav__link'>
-                    <IconFlight className='side-nav__icon'></IconFlight>
+                    <IconFlight className='side-nav__icon' ></IconFlight>
                     <span>Flight</span>
                 </a>
             </li>
@@ -34,7 +34,7 @@ const Navigation = props => (
             </li>
         </ul>
         <div className='legal'>
-    	    &copy; 2019 by Trillo. All rights reserved.
+            &copy; 2019 by Trillo. All rights reserved.
         </div>
     </nav>
 )

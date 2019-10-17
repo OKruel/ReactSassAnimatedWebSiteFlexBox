@@ -5,8 +5,8 @@ import Content from './Content/Content';
 
 const Layout = props => (
     <div className='container'>
-        <Header></Header>
-        <Content></Content>
+        <Header />
+        <Content />
     </div>
 )
 
